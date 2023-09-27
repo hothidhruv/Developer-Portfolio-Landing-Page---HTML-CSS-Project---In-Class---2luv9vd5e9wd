@@ -1,1 +1,138 @@
+body,
+html {
+  height: 100%;
+  margin: 0px;
 
+}
+
+
+/* <!-- 2-Create hero-section - --> */
+.hero-section {
+  background-image: url("seconde.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.font-section {
+  color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2vw;
+  position: absolute;
+  top: 5%;
+  left: 37%;
+}
+
+
+/* <!-- 3-Create black-box-section --> */
+.black-box-section {
+  background-color: #000;
+}
+
+.black-box-section h3 {
+  color: whitesmoke;
+  margin-top: auto;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.black-box-section span {
+  font-size: 96px;
+}
+
+
+/* <!--  4-Card Container Section using Grid --> */
+.card-container-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  justify-items: center;
+
+}
+
+.card {
+  border: 2px solid whitesmoke;
+  max-width: 340px;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow:
+    0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+
+.card-img-top img {
+  height: 200px;
+  width: 340px;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+
+/* <!-- bottom-section --> */
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+  margin-top: 20px;
+
+  /* border: 3px solid blue; */
+}
+
+.box {
+  height: 200px;
+  width: 40%;
+  padding: 20px;
+
+  /* border: 2px solid greenyellow; */
+}
+
+.box1 {
+  background-color: rgb(33, 88, 44);
+
+}
+
+.box2 {
+  background-color: rgb(120, 25, 25);
+
+}
+
+
+
+
+/* CSS Responsive */
+@media only screen and (max-width : 786px) {
+
+
+  /* .hero-section {
+    
+
+  } */
+
+
+  .black-box-section {
+    font-size: 24px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-bottom: 20px;
+
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    padding: 20px;
+  }
+}
